@@ -42,7 +42,6 @@ void printCurrentText(Node* undoStack) {
         temp = temp->next;
     }
 
-    // Print characters
     temp = reversed;
     if (!temp) {
         printf("(empty)");
@@ -71,7 +70,7 @@ int main() {
         printf("1. Type Text\n2. Undo\n3. Redo\n4. Exit\n");
         printf("Choose an option: ");
         scanf("%d", &choice);
-        getchar(); // clear newline
+        getchar(); 
 
         switch (choice) {
             case 1:
